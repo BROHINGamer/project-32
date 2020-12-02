@@ -85,7 +85,9 @@ function draw() {
   if(back) 
   background(back);
   Engine.update(engine);
-
+ imageMode(CENTER);
+  image(img,player.position.x,player.position.y,40,40);
+	
   fill(rgb(135, 205, 236));
   
   textSize(35);
@@ -158,8 +160,7 @@ function draw() {
   ground2.display();
   ground3.display();
 
-  imageMode(CENTER);
-  image(img,player.position.x,player.position.y,40,40);
+ 
 
   sling.display();
 }
